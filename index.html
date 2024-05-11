@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git blog</title>
+</head>
+<body>
+    <div>
+        <h1>What is Git</h1>
+        <p>Git is a version control system  that manages and keeps track of your code</p>
+        <p>Git was developed in 2005 by <b>Linus Torvalds</b> as open source software for tracking changes in a distributed version control system</p>
+        <p>Git is typically used by Software engineers.Git as a tool can be used to track changes in code and collaborate with other developers.</p>
+         <div>
+            <p>Version control systems are software tools that help software teams manage changes to source code over time. As development environments have accelerated, version control systems help software teams work faster and smarter.</p>
+            <h3>
+                Other examples of version control systems include
+                <ul>
+                    <li>Mercurial</li>
+                    <li>Bitbucket</li>
+                    <li>Svn</li>
+                    <li>GNU arch</li>
+                    <li>Gitlab</li>
+                    <li>Helix Core</li>
+                    <li>Fossil</li>
+                </ul>
+                
+            </h3>
+         </div>
+
+       <div>
+        <h1>Installing Git</h1>
+        <h3>How To Install Git on Windows</h3>
+        <p>Intalling Git on Windows is a fairly straightforward process and it involves the following steps</p>
+           <ol>
+               <li>Download the Git for Windows</li>
+               <li>Run the installer</li>
+               <li>Verify installation</li>
+           </ol>
+
+         <h4><b>Step 1:</b> Download the windows installer</h4>
+            <p>Go to the Git <a href="https://git-scm.com/downloads">official website</a> and download the latest version of Git for Windows</p>
+            <img src="assets/download.png" alt="Git download">
+            <p>Click on the download link to download the Git installer</p>
+        <h4><b>Step 2:</b>Run the install and select options</h4>
+            <p>Run the installer and follow the steps in the installation wizard</p>
+            <img src="assets/run.png" alt="Git install">
+            <p>Click on the next button to proceed with the installation</p>
+            <p>The installer will request an installation location.Keep the default unless you need to change it , and click Next</p>
+            <img src="assets/install.png" alt="Git location">
+            <p>A component selection screen will be displayed.Keep the default settings unless you need to modify them , and click next</p>
+            <img src="assets/components.png" alt="Git components">
+            <p>You will be prompted to create a start folder.Leave it as is and click <b>Next</b></p>
+            <img src="assets/next.png" alt="Git start">
+            <p>Choose the default editor used by Git and click <b>Next</b></p>
+            <p>In this next step, you can opt to rename your initial branch. The default is master. </p>
+            <p>Now you’re on to modifying the PATH environment. Leave this on the recommended selection, Git from the command line and also from 3rd party software and click Next.</p>
+            <p>On the next screen, you need to pick the SSH program you want to use. Git does come with its own SSH client, so leaving the default settings checked is fine. Click Next</p>
+            <p>The following option concerns server certificates. The majority of users should choose the default, Use the OpenSSL library. Click Next.</p>
+            <p>The next screen deals with line ending conversions. Leave it set to the default option, Checkout Windows-style, commit Unix-style line endings. Changing this option might cause issues. Click Next</p>
+            <p>Next up, you’ll need to select the terminal emulator. The default MinTTY is recommended. Click Next.</p>
+            <p>On the next screen, you’ll be asked what the git pull command should do. Again, the default option is recommended. Click Next.</p>
+            <p>You’ll need to choose which credential helper to use next. Keep the default option selected and click Next.</p>
+            <p>Finally, you’ll be asked to enable file system caching. Leave the default option selected and click Install.</p>
+          <h4><b>Step 3:</b> Verify installation</h4>
+            <p>Open the command prompt and type the following command</p>
+            <code>git --version</code>
+            <p>If Git is installed correctly, you will see the version of Git that you installed</p>
+            <img src="assets/version.png" alt="Git version">
+
+        <h3>How To Install Git on Linux</h3>
+        <p>Installing Git on Linux is a fairly straightforward process and it involves the following steps</p>
+           <ol>
+               <li>Install Git from the package manager</li>
+               <li>Verify installation</li>
+           </ol>
+
+         <h4><b>Step 1:</b> Install Git from the package manager</h4>
+            <p>Open the terminal and type the following command</p>
+            <code>sudo apt-get update</code><br>
+            <code>sudo apt-get install git</code>
+            <p>Enter your password when prompted and Git will be installed</p>
+        <h4><b>Step 2:</b> Verify installation</h4>
+            <p>Open the terminal and type the following command</p>
+            <img src="assets/version.png" alt="Git version">
+            <p>If Git is installed correctly, you will see the version of Git that you installed</p>
+
+        <h3>How To Install Git on Mac</h3>
+        <p>Installing Git on Mac is a fairly straightforward process and it involves the following steps</p>
+           <ol>
+            <p>Go to the Git <a href="https://git-scm.com/download/mac">official website</a> and download the latest version of Git for mac</p>
+            <img src="assets/mac.png" alt="Git download">
+            <p>Click on the download link to download the Git installer</p>
+            <p>Run the installer and follow the steps in the installation wizard</p>        
+        <h4><b>Step 2:</b> Verify installation</h4>
+            <p>Open the terminal and type the following command</p>
+            <img src="assets/version.png" alt="Git version">
+            <p>If Git is installed correctly, you will see the version of Git that you installed</p>
+       </div>
+
+    <div>
+        <h1>Configuring Git</h1>
+        <p>After installing Git, you need to configure it with your name and email address</p>
+        <p>Open the terminal and type the following commands</p>
+        <code>git config --global user.name "Your Name"</code><br>
+        <code>git config --global user.email "Your Email"</code>
+        <p>Replace "Your Name" with your name and "Your Email" with your email address</p>
+        <p>After configuring Git, you can start using it to track changes in your code</p>
+        <h2>Video tutorial to help in Configuring of git</h2>
+        <video width="320" height="240" controls>
+            <source src="assets/configure.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+
+    <div>
+        <h1>Intializing a Git repository</h1>
+        <p>To start tracking changes in your code, you need to initialize a Git repository</p>
+        <p>Open the terminal and navigate to the directory where your code is located</p>
+        <p>Run the following command to initialize a Git repository</p>
+        <code>git init</code>
+        <p>After initializing a Git repository, you can start tracking changes in your code</p>
+        <p>Use the following commands to add and commit changes to your code</p>
+        <code>git add .</code><br>
+        <code>git commit -m "Initial commit"</code>
+        <p>After committing your changes, you can push your code to a remote repository</p>
+        <p>Use the following commands to add a remote repository and push your code</p>
+        <code>git remote add origin <remote-repository-url></code><br>
+        <code>git push -u origin master</code><br>
+        <video width="320" height="240" controls>
+            <source src="assets/How to initialize git repository.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+          <div>
+            <h1>Adding files to the staging area</h1>
+            <p>Before you commit changes to your code, you need to add the files to the staging area</p>
+            <p>Open the terminal and navigate to the directory where your code is located</p>
+            <p>Use the following command to add files to the staging area</p>
+            <code>git add <file-name></code>
+            <p>Replace <file-name> with the name of the file you want to add to the staging area</p> <br>
+              <video width="320" height="240" controls>
+                <source src="assets/How to add files to staging area in git.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+          <div>
+            
+                <h1>Commiting Changes</h1>
+                <p>After adding files to the staging area, you need to commit the changes to your code</p>
+                <p>Open the terminal and navigate to the directory where your code is located</p>
+                <p>Use the following command to commit changes to your code</p>
+                <code>git commit -m "Commit message"</code>
+                <p>Replace "Commit message" with a brief description of the changes you are committing</p><br>
+                <video width="320" height="240" controls>
+                    <source src="assets/y2mate.com - How To Git Commit And Push Changes_1080pFHR.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+          </div>
+          <div>
+            <h1>Branches</h1>
+            <p>Branches in Git are used to work on different versions of the code</p>
+            <p>Creating a new branch allows you to work on new features without affecting the main codebase</p>
+            <p>Use the following commands to create a new branch and switch to it</p>
+            <code>git checkout -b <branch-name></code>
+            <p>Replace <branch-name> with the name of the new branch you want to create</p> <br>
+
+          </div>
+          <div>
+            <h1>Creating a branch</h1>
+            <p>Branches in Git are used to work on different versions of the code</p>
+            <p>Creating a new branch allows you to work on new features without affecting the main codebase</p>
+            <p>Use the following commands to create a new branch and switch to it</p>
+            <code>git checkout -b <branch-name></code>
+            <p>Replace <branch-name> with the name of the new branch you want to create</p><br>
+            <video width="320" height="240" controls>
+                <source src="assets/How to Create a Git Branch [Beginner Git Tutorial].mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+          <div>
+            <h1>Viewing all branches</h1>
+            <p>To view all branches in your Git repository, use the following command</p>
+            <code>git branch</code>
+            <p>This will display a list of all branches in your Git repository</p> <br>
+            <video width="320" height="240" controls>
+                <source src="assets/How to view all branches in git.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+          <div>
+            <h1>Switching active branches</h1>
+            <p>To switch to a different branch in your Git repository, use the following command</p>
+            <code>git checkout <branch-name></code>
+            <p>Replace <branch-name> with the name of the branch you want to switch to</p>
+              <video width="320" height="240" controls>
+                <source src="assets/How to switch branch in git.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+          </div>
+          <div>
+            <h1>Merging a branch</h1>
+            <p>To merge a branch into the main codebase, use the following commands</p>
+            <code>git checkout master</code><br>
+            <code>git merge <branch-name></code>
+            <p>Replace <branch-name> with the name of the branch you want to merge into the main codebase</p><br>
+            <video width="320" height="240" controls>
+                <source src="assets/y2mate.com - How to merge a branch into master branch in git_v720P.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+
+          <div>
+            <h1>Deleting a branch</h1>
+            <p>To delete a branch in your Git repository, use the following command</p>
+            <code>git branch -d <branch-name></code>
+            <p>Replace <branch-name> with the name of the branch you want to delete</p><br>
+            <video width="320" height="240" controls>
+                <source src="assets/How do I delete a Git branch locally and remotely.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+          <div>
+            <h1>Next Steps</h1>
+            <p>Now that you have a basic understanding of Git, you can start using it to track changes in your code</p>
+            <p>Here are some resources to help you learn more about Git</p>
+            <ul>
+                <li><a href="https://git-scm.com/doc">Official Git documentation</a></li>
+                <li><a href="https://www.atlassian.com/git/tutorials">Atlassian Git tutorials</a></li>
+                <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow">Git flow</a></li>
+                <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow">Git best practices</a></li>
+            </ul>
+          </div>
+       <h1>Summary</h1>
+       <p>1. Git is a version control system that manages and keeps track of your code</p>
+       <p>2. Installing Git on Windows involves downloading the Git installer and running it</p>
+       <p>3. Configuring Git involves setting your name and email address <b> git config --global user.email "Your email" , git config --global user.name "Your Name" </b></p>
+       <p>4. Initializing a Git repository involves using the <b>git init command</b></p>
+       <p>5. Adding files to the staging area involves using the <b>git add command</b></p>
+       <p>6. Committing changes involves using the <b>git commit command</b></p>
+       <p>7. Creating a branch involves using the <b>git checkout -b command</b></p>
+       <p>8. Viewing all branches involves using the <b>git branch command</b></p>
+       <p>9. Switching active branches involves using the <b>git checkout command</b></p>
+       <p>10. Merging a branch involves using the <b>git merge command</b></p>
+       <p>11. Deleting a branch involves using the <b>git merge command</b></p>
+       <p>12. Now that you have a basic understanding of Git, you can start using it to track changes in your code</p>
+
+
+    </div>
+    
+</body>
+</html>
